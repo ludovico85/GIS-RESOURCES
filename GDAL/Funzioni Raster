@@ -1,0 +1,6 @@
+#COMPRESSIONE
+#la compressione jpeg è compatibile sono con una profonodità del pixel pari a 8 o 12 bit
+gdal_translate -co COMPRESS=DEFLATE input.tif target.tif
+
+#RICAMPIONAMENTO (20 pixel)
+gdalwrap -tr 20 -20 input.tif output.tif
