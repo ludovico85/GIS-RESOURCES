@@ -15,3 +15,7 @@ gdaladdo -r nearest mymap.mbtiles 2 4 8 16 18
 
 #RIPROIEZIONE E COMPRESSIONE
 gdalwarp -s_srs EPSG:3004 -t_srs EPSG:32633 -ot Byte -r near -co COMPRESS=DEFLATE  input.tif output.tif
+
+#MOSAICARE IMMAGINI
+#mergeInputFiles.txt file di testo con elenco raster da mosaicare nella cartella (un raster per ogni riga)
+gdal_merge.py -co COMPRESS=jpeg -ot Byte -o output.tif --optfile mergeInputFiles.txt
