@@ -1,1 +1,0 @@
-#XYZ Tiles Function
