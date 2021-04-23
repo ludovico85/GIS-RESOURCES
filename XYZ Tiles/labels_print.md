@@ -1,3 +1,7 @@
+# Print XYZ labels in QIGS
+
+Solution from https://gis.stackexchange.com/questions/309768/qgis-2-18-quickmapservices-basemap-labels-shrink-when-exported-to-pdf-from-print
+
 The size of the labels is baked into each zoom level. When you increase the resolution, the server provides you a more zoomed-in tile, which has: (1) higher resolution and (2) smaller labels. You can't get (1) without (2).
 
 One workaround is to force the tileserver to give you the zoomed-out version of the tiles. The image will be slightly fuzzy/pixelated but the labels will be larger. There are two ways to do this:
@@ -12,4 +16,3 @@ Next, open the Browser panel, right click on "XYZ Tiles" > New Connection. Paste
 
 It takes some trial and error to find the right maximum zoom level for the scale at which you're making maps.
 
-https://gis.stackexchange.com/questions/309768/qgis-2-18-quickmapservices-basemap-labels-shrink-when-exported-to-pdf-from-print
