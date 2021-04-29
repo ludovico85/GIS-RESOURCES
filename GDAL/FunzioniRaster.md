@@ -40,3 +40,10 @@ gdal_translate --config OGR_SQLITE_SYNCHRONOUS OFF -co  APPEND_SUBDATASET=YES -c
 ```
 gdaladdo --config OGR_SQLITE_SYNCHRONOUS OFF -r AVERAGE output.gpkg 2 4 8 16 32 64 128 256
 ```
+
+### Estrarre le bande da un RGB (per i.rgb.his)
+```
+gdal_translate -b 1 a_nodata -999 -ot Int16 input.tif output1.tif
+gdal_translate -b 2 a_nodata -999 -ot Int16 input.tif output2.tif
+gdal_translate -b 3 a_nodata -999 -ot Int16 input.tif output3.tif
+```
