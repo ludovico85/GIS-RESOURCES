@@ -5,12 +5,12 @@ La compressione jpeg è compatibile sono con una profonodità del pixel pari a 8
 gdal_translate -co COMPRESS=DEFLATE input.tif target.tif
 ```
 
-## RICAMPIONAMENTO (20 pixel)
+## Ricampionamento (20 pixel)
 ```
 gdalwrap -tr 20 -20 input.tif output.tif
 ```
 
-## CLIP
+## Clip
 ```
 gdalwarp -of GTiff -cutline inputshape.shp -cl inputshape -crop_to_cutline -co COMPRESS=DEFLATE inpuraster.tif output.tif
 ```
@@ -22,17 +22,17 @@ gdal_translate -of mbtiles mymap3.tif mymap.mbtiles
 gdaladdo -r nearest mymap.mbtiles 2 4 8 16 18
 ```
 
-## RIPROIEZIONE E COMPRESSIONE
+## Riproiezione e compressione
 ```
 gdalwarp -s_srs EPSG:3004 -t_srs EPSG:32633 -ot Byte -r near -co COMPRESS=DEFLATE  input.tif output.tif
 ```
 
-## MOSAICARE IMMAGINI
+## Mosaicare immagini
 mergeInputFiles.txt file di testo con elenco raster da mosaicare nella cartella (un raster per ogni riga)
 ```
 gdal_merge.py -co COMPRESS=jpeg -ot Byte -o output.tif --optfile mergeInputFiles.txt
 ```
-## SALVARE UN RASTER NEL FORMATO GEOPACKAGE
+## Salvare un raster nel formato geopackage
 ```
 gdal_translate --config OGR_SQLITE_SYNCHRONOUS OFF -co  APPEND_SUBDATASET=YES -co TILE_FORMAT=WEBP -a_srs EPSG:21781 -of GPKG input.tif output.gpkg
 ```
