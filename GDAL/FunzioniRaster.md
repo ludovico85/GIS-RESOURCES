@@ -1,5 +1,5 @@
 # SERIE DI FUNZIONI PER LAVORARE CON I RASTER UTILIZZANDO LA LIBRERIA GDAL ATTRAVERSO LA SHELL DI OSGEO4W
-## COMPRESSIONE
+## Compressione
 La compressione jpeg è compatibile sono con una profonodità del pixel pari a 8 o 12 bit
 ```
 gdal_translate -co COMPRESS=DEFLATE input.tif target.tif
