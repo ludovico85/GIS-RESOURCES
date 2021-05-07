@@ -47,3 +47,8 @@ gdal_translate -b 1 a_nodata -999 -ot Int16 input.tif output1.tif
 gdal_translate -b 2 a_nodata -999 -ot Int16 input.tif output2.tif
 gdal_translate -b 3 a_nodata -999 -ot Int16 input.tif output3.tif
 ```
+
+## Vettorializzazione di un Raster
+```
+gdal_polygonize.py input.tif -b 1 -f GPKG out-gpkg
+```
