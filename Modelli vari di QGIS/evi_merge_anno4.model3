@@ -1,0 +1,941 @@
+<!DOCTYPE model>
+<Option type="Map">
+  <Option name="children" type="Map">
+    <Option name="gdal:translate_1" type="Map">
+      <Option value="true" name="active" type="bool"/>
+      <Option name="alg_config"/>
+      <Option value="gdal:translate" name="alg_id" type="QString"/>
+      <Option value="Translate Maggio" name="component_description" type="QString"/>
+      <Option value="234" name="component_pos_x" type="double"/>
+      <Option value="725" name="component_pos_y" type="double"/>
+      <Option name="dependencies"/>
+      <Option value="gdal:translate_1" name="id" type="QString"/>
+      <Option name="outputs"/>
+      <Option value="true" name="outputs_collapsed" type="bool"/>
+      <Option value="true" name="parameters_collapsed" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="COPY_SUBDATASETS" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="false" name="static_value" type="bool"/>
+          </Option>
+        </Option>
+        <Option name="DATA_TYPE" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="0" name="static_value" type="int"/>
+          </Option>
+        </Option>
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option value="saga:mosaicrasterlayers_1" name="child_id" type="QString"/>
+            <Option value="TARGET_OUT_GRID" name="output_name" type="QString"/>
+            <Option value="1" name="source" type="int"/>
+          </Option>
+        </Option>
+        <Option name="NODATA" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option name="static_value" type="invalid"/>
+          </Option>
+        </Option>
+        <Option name="OPTIONS" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="" name="static_value" type="QString"/>
+          </Option>
+        </Option>
+        <Option name="TARGET_CRS" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option name="static_value" type="invalid"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="gdal:translate_2" type="Map">
+      <Option value="true" name="active" type="bool"/>
+      <Option name="alg_config"/>
+      <Option value="gdal:translate" name="alg_id" type="QString"/>
+      <Option value="Translate Giugno" name="component_description" type="QString"/>
+      <Option value="499" name="component_pos_x" type="double"/>
+      <Option value="726" name="component_pos_y" type="double"/>
+      <Option name="dependencies"/>
+      <Option value="gdal:translate_2" name="id" type="QString"/>
+      <Option name="outputs"/>
+      <Option value="true" name="outputs_collapsed" type="bool"/>
+      <Option value="true" name="parameters_collapsed" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="COPY_SUBDATASETS" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="false" name="static_value" type="bool"/>
+          </Option>
+        </Option>
+        <Option name="DATA_TYPE" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="0" name="static_value" type="int"/>
+          </Option>
+        </Option>
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option value="saga:mosaicrasterlayers_2" name="child_id" type="QString"/>
+            <Option value="TARGET_OUT_GRID" name="output_name" type="QString"/>
+            <Option value="1" name="source" type="int"/>
+          </Option>
+        </Option>
+        <Option name="NODATA" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option name="static_value" type="invalid"/>
+          </Option>
+        </Option>
+        <Option name="OPTIONS" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="" name="static_value" type="QString"/>
+          </Option>
+        </Option>
+        <Option name="TARGET_CRS" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option name="static_value" type="invalid"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="gdal:translate_3" type="Map">
+      <Option value="true" name="active" type="bool"/>
+      <Option name="alg_config"/>
+      <Option value="gdal:translate" name="alg_id" type="QString"/>
+      <Option value="Translate Luglio" name="component_description" type="QString"/>
+      <Option value="738" name="component_pos_x" type="double"/>
+      <Option value="729" name="component_pos_y" type="double"/>
+      <Option name="dependencies"/>
+      <Option value="gdal:translate_3" name="id" type="QString"/>
+      <Option name="outputs"/>
+      <Option value="true" name="outputs_collapsed" type="bool"/>
+      <Option value="true" name="parameters_collapsed" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="COPY_SUBDATASETS" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="false" name="static_value" type="bool"/>
+          </Option>
+        </Option>
+        <Option name="DATA_TYPE" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="0" name="static_value" type="int"/>
+          </Option>
+        </Option>
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option value="saga:mosaicrasterlayers_3" name="child_id" type="QString"/>
+            <Option value="TARGET_OUT_GRID" name="output_name" type="QString"/>
+            <Option value="1" name="source" type="int"/>
+          </Option>
+        </Option>
+        <Option name="NODATA" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option name="static_value" type="invalid"/>
+          </Option>
+        </Option>
+        <Option name="OPTIONS" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="" name="static_value" type="QString"/>
+          </Option>
+        </Option>
+        <Option name="TARGET_CRS" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option name="static_value" type="invalid"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="gdal:translate_4" type="Map">
+      <Option value="true" name="active" type="bool"/>
+      <Option name="alg_config"/>
+      <Option value="gdal:translate" name="alg_id" type="QString"/>
+      <Option value="Translate Agosto" name="component_description" type="QString"/>
+      <Option value="965" name="component_pos_x" type="double"/>
+      <Option value="727" name="component_pos_y" type="double"/>
+      <Option name="dependencies"/>
+      <Option value="gdal:translate_4" name="id" type="QString"/>
+      <Option name="outputs"/>
+      <Option value="true" name="outputs_collapsed" type="bool"/>
+      <Option value="true" name="parameters_collapsed" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="COPY_SUBDATASETS" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="false" name="static_value" type="bool"/>
+          </Option>
+        </Option>
+        <Option name="DATA_TYPE" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="0" name="static_value" type="int"/>
+          </Option>
+        </Option>
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option value="saga:mosaicrasterlayers_4" name="child_id" type="QString"/>
+            <Option value="TARGET_OUT_GRID" name="output_name" type="QString"/>
+            <Option value="1" name="source" type="int"/>
+          </Option>
+        </Option>
+        <Option name="NODATA" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option name="static_value" type="invalid"/>
+          </Option>
+        </Option>
+        <Option name="OPTIONS" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="" name="static_value" type="QString"/>
+          </Option>
+        </Option>
+        <Option name="TARGET_CRS" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option name="static_value" type="invalid"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="gdal:translate_5" type="Map">
+      <Option value="true" name="active" type="bool"/>
+      <Option name="alg_config"/>
+      <Option value="gdal:translate" name="alg_id" type="QString"/>
+      <Option value="Translate Anno" name="component_description" type="QString"/>
+      <Option value="1050" name="component_pos_x" type="double"/>
+      <Option value="878" name="component_pos_y" type="double"/>
+      <Option name="dependencies"/>
+      <Option value="gdal:translate_5" name="id" type="QString"/>
+      <Option name="outputs" type="Map">
+        <Option name="mosaico_finale" type="Map">
+          <Option value="gdal:translate_5" name="child_id" type="QString"/>
+          <Option value="mosaico_finale" name="component_description" type="QString"/>
+          <Option value="1327" name="component_pos_x" type="double"/>
+          <Option value="869" name="component_pos_y" type="double"/>
+          <Option name="default_value" type="invalid"/>
+          <Option value="false" name="mandatory" type="bool"/>
+          <Option value="mosaico_finale" name="name" type="QString"/>
+          <Option value="OUTPUT" name="output_name" type="QString"/>
+        </Option>
+      </Option>
+      <Option value="true" name="outputs_collapsed" type="bool"/>
+      <Option value="true" name="parameters_collapsed" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="COPY_SUBDATASETS" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="false" name="static_value" type="bool"/>
+          </Option>
+        </Option>
+        <Option name="DATA_TYPE" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="0" name="static_value" type="int"/>
+          </Option>
+        </Option>
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option value="saga:mosaicrasterlayers_5" name="child_id" type="QString"/>
+            <Option value="TARGET_OUT_GRID" name="output_name" type="QString"/>
+            <Option value="1" name="source" type="int"/>
+          </Option>
+        </Option>
+        <Option name="NODATA" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option name="static_value" type="invalid"/>
+          </Option>
+        </Option>
+        <Option name="OPTIONS" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="" name="static_value" type="QString"/>
+          </Option>
+        </Option>
+        <Option name="TARGET_CRS" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option name="static_value" type="invalid"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="saga:mosaicrasterlayers_1" type="Map">
+      <Option value="true" name="active" type="bool"/>
+      <Option name="alg_config"/>
+      <Option value="saga:mosaicrasterlayers" name="alg_id" type="QString"/>
+      <Option value="Mosaic raster layers Maggio" name="component_description" type="QString"/>
+      <Option value="514" name="component_pos_x" type="double"/>
+      <Option value="161" name="component_pos_y" type="double"/>
+      <Option name="dependencies"/>
+      <Option value="saga:mosaicrasterlayers_1" name="id" type="QString"/>
+      <Option name="outputs"/>
+      <Option value="true" name="outputs_collapsed" type="bool"/>
+      <Option value="true" name="parameters_collapsed" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="BLEND_DIST" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="10" name="static_value" type="double"/>
+          </Option>
+        </Option>
+        <Option name="GRIDS" type="List">
+          <Option type="Map">
+            <Option value="maggio1" name="parameter_name" type="QString"/>
+            <Option value="0" name="source" type="int"/>
+          </Option>
+          <Option type="Map">
+            <Option value="maggio2" name="parameter_name" type="QString"/>
+            <Option value="0" name="source" type="int"/>
+          </Option>
+        </Option>
+        <Option name="MATCH" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="0" name="static_value" type="int"/>
+          </Option>
+        </Option>
+        <Option name="NAME" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="Mosaic" name="static_value" type="QString"/>
+          </Option>
+        </Option>
+        <Option name="OVERLAP" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="4" name="static_value" type="int"/>
+          </Option>
+        </Option>
+        <Option name="RESAMPLING" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="1" name="static_value" type="int"/>
+          </Option>
+        </Option>
+        <Option name="TARGET_USER_FITS" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="0" name="static_value" type="int"/>
+          </Option>
+        </Option>
+        <Option name="TARGET_USER_SIZE" type="List">
+          <Option type="Map">
+            <Option value="cellsize" name="parameter_name" type="QString"/>
+            <Option value="0" name="source" type="int"/>
+          </Option>
+        </Option>
+        <Option name="TARGET_USER_XMIN TARGET_USER_XMAX TARGET_USER_YMIN TARGET_USER_YMAX" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option name="static_value" type="invalid"/>
+          </Option>
+        </Option>
+        <Option name="TYPE" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="7" name="static_value" type="int"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="saga:mosaicrasterlayers_2" type="Map">
+      <Option value="true" name="active" type="bool"/>
+      <Option name="alg_config"/>
+      <Option value="saga:mosaicrasterlayers" name="alg_id" type="QString"/>
+      <Option value="Mosaic raster layers Giugno" name="component_description" type="QString"/>
+      <Option value="489" name="component_pos_x" type="double"/>
+      <Option value="323" name="component_pos_y" type="double"/>
+      <Option name="dependencies"/>
+      <Option value="saga:mosaicrasterlayers_2" name="id" type="QString"/>
+      <Option name="outputs"/>
+      <Option value="true" name="outputs_collapsed" type="bool"/>
+      <Option value="true" name="parameters_collapsed" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="BLEND_DIST" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="10" name="static_value" type="double"/>
+          </Option>
+        </Option>
+        <Option name="GRIDS" type="List">
+          <Option type="Map">
+            <Option value="giugno1" name="parameter_name" type="QString"/>
+            <Option value="0" name="source" type="int"/>
+          </Option>
+          <Option type="Map">
+            <Option value="giugno2" name="parameter_name" type="QString"/>
+            <Option value="0" name="source" type="int"/>
+          </Option>
+        </Option>
+        <Option name="MATCH" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="0" name="static_value" type="int"/>
+          </Option>
+        </Option>
+        <Option name="NAME" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="Mosaic" name="static_value" type="QString"/>
+          </Option>
+        </Option>
+        <Option name="OVERLAP" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="4" name="static_value" type="int"/>
+          </Option>
+        </Option>
+        <Option name="RESAMPLING" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="1" name="static_value" type="int"/>
+          </Option>
+        </Option>
+        <Option name="TARGET_USER_FITS" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="0" name="static_value" type="int"/>
+          </Option>
+        </Option>
+        <Option name="TARGET_USER_SIZE" type="List">
+          <Option type="Map">
+            <Option value="cellsize" name="parameter_name" type="QString"/>
+            <Option value="0" name="source" type="int"/>
+          </Option>
+        </Option>
+        <Option name="TARGET_USER_XMIN TARGET_USER_XMAX TARGET_USER_YMIN TARGET_USER_YMAX" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option name="static_value" type="invalid"/>
+          </Option>
+        </Option>
+        <Option name="TYPE" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="7" name="static_value" type="int"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="saga:mosaicrasterlayers_3" type="Map">
+      <Option value="true" name="active" type="bool"/>
+      <Option name="alg_config"/>
+      <Option value="saga:mosaicrasterlayers" name="alg_id" type="QString"/>
+      <Option value="Mosaic raster layers Luglio" name="component_description" type="QString"/>
+      <Option value="457" name="component_pos_x" type="double"/>
+      <Option value="476" name="component_pos_y" type="double"/>
+      <Option name="dependencies"/>
+      <Option value="saga:mosaicrasterlayers_3" name="id" type="QString"/>
+      <Option name="outputs"/>
+      <Option value="true" name="outputs_collapsed" type="bool"/>
+      <Option value="true" name="parameters_collapsed" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="BLEND_DIST" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="10" name="static_value" type="double"/>
+          </Option>
+        </Option>
+        <Option name="GRIDS" type="List">
+          <Option type="Map">
+            <Option value="lugilo1" name="parameter_name" type="QString"/>
+            <Option value="0" name="source" type="int"/>
+          </Option>
+          <Option type="Map">
+            <Option value="luglio2" name="parameter_name" type="QString"/>
+            <Option value="0" name="source" type="int"/>
+          </Option>
+        </Option>
+        <Option name="MATCH" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="0" name="static_value" type="int"/>
+          </Option>
+        </Option>
+        <Option name="NAME" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="Mosaic" name="static_value" type="QString"/>
+          </Option>
+        </Option>
+        <Option name="OVERLAP" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="4" name="static_value" type="int"/>
+          </Option>
+        </Option>
+        <Option name="RESAMPLING" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="1" name="static_value" type="int"/>
+          </Option>
+        </Option>
+        <Option name="TARGET_USER_FITS" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="0" name="static_value" type="int"/>
+          </Option>
+        </Option>
+        <Option name="TARGET_USER_SIZE" type="List">
+          <Option type="Map">
+            <Option value="cellsize" name="parameter_name" type="QString"/>
+            <Option value="0" name="source" type="int"/>
+          </Option>
+        </Option>
+        <Option name="TARGET_USER_XMIN TARGET_USER_XMAX TARGET_USER_YMIN TARGET_USER_YMAX" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option name="static_value" type="invalid"/>
+          </Option>
+        </Option>
+        <Option name="TYPE" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="7" name="static_value" type="int"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="saga:mosaicrasterlayers_4" type="Map">
+      <Option value="true" name="active" type="bool"/>
+      <Option name="alg_config"/>
+      <Option value="saga:mosaicrasterlayers" name="alg_id" type="QString"/>
+      <Option value="Mosaic raster layers Agosto" name="component_description" type="QString"/>
+      <Option value="450" name="component_pos_x" type="double"/>
+      <Option value="626" name="component_pos_y" type="double"/>
+      <Option name="dependencies"/>
+      <Option value="saga:mosaicrasterlayers_4" name="id" type="QString"/>
+      <Option name="outputs"/>
+      <Option value="true" name="outputs_collapsed" type="bool"/>
+      <Option value="true" name="parameters_collapsed" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="BLEND_DIST" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="10" name="static_value" type="double"/>
+          </Option>
+        </Option>
+        <Option name="GRIDS" type="List">
+          <Option type="Map">
+            <Option value="agosto1" name="parameter_name" type="QString"/>
+            <Option value="0" name="source" type="int"/>
+          </Option>
+          <Option type="Map">
+            <Option value="agosto2" name="parameter_name" type="QString"/>
+            <Option value="0" name="source" type="int"/>
+          </Option>
+        </Option>
+        <Option name="MATCH" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="0" name="static_value" type="int"/>
+          </Option>
+        </Option>
+        <Option name="NAME" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="Mosaic" name="static_value" type="QString"/>
+          </Option>
+        </Option>
+        <Option name="OVERLAP" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="4" name="static_value" type="int"/>
+          </Option>
+        </Option>
+        <Option name="RESAMPLING" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="1" name="static_value" type="int"/>
+          </Option>
+        </Option>
+        <Option name="TARGET_USER_FITS" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="0" name="static_value" type="int"/>
+          </Option>
+        </Option>
+        <Option name="TARGET_USER_SIZE" type="List">
+          <Option type="Map">
+            <Option value="cellsize" name="parameter_name" type="QString"/>
+            <Option value="0" name="source" type="int"/>
+          </Option>
+        </Option>
+        <Option name="TARGET_USER_XMIN TARGET_USER_XMAX TARGET_USER_YMIN TARGET_USER_YMAX" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option name="static_value" type="invalid"/>
+          </Option>
+        </Option>
+        <Option name="TYPE" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="7" name="static_value" type="int"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="saga:mosaicrasterlayers_5" type="Map">
+      <Option value="true" name="active" type="bool"/>
+      <Option name="alg_config"/>
+      <Option value="saga:mosaicrasterlayers" name="alg_id" type="QString"/>
+      <Option value="Mosaic Anno" name="component_description" type="QString"/>
+      <Option value="589" name="component_pos_x" type="double"/>
+      <Option value="829" name="component_pos_y" type="double"/>
+      <Option name="dependencies"/>
+      <Option value="saga:mosaicrasterlayers_5" name="id" type="QString"/>
+      <Option name="outputs"/>
+      <Option value="true" name="outputs_collapsed" type="bool"/>
+      <Option value="true" name="parameters_collapsed" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="BLEND_DIST" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="10" name="static_value" type="double"/>
+          </Option>
+        </Option>
+        <Option name="GRIDS" type="List">
+          <Option type="Map">
+            <Option value="gdal:translate_4" name="child_id" type="QString"/>
+            <Option value="OUTPUT" name="output_name" type="QString"/>
+            <Option value="1" name="source" type="int"/>
+          </Option>
+          <Option type="Map">
+            <Option value="gdal:translate_2" name="child_id" type="QString"/>
+            <Option value="OUTPUT" name="output_name" type="QString"/>
+            <Option value="1" name="source" type="int"/>
+          </Option>
+          <Option type="Map">
+            <Option value="gdal:translate_3" name="child_id" type="QString"/>
+            <Option value="OUTPUT" name="output_name" type="QString"/>
+            <Option value="1" name="source" type="int"/>
+          </Option>
+          <Option type="Map">
+            <Option value="gdal:translate_1" name="child_id" type="QString"/>
+            <Option value="OUTPUT" name="output_name" type="QString"/>
+            <Option value="1" name="source" type="int"/>
+          </Option>
+        </Option>
+        <Option name="MATCH" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="0" name="static_value" type="int"/>
+          </Option>
+        </Option>
+        <Option name="NAME" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="Mosaic" name="static_value" type="QString"/>
+          </Option>
+        </Option>
+        <Option name="OVERLAP" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="4" name="static_value" type="int"/>
+          </Option>
+        </Option>
+        <Option name="RESAMPLING" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="1" name="static_value" type="int"/>
+          </Option>
+        </Option>
+        <Option name="TARGET_USER_FITS" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="0" name="static_value" type="int"/>
+          </Option>
+        </Option>
+        <Option name="TARGET_USER_SIZE" type="List">
+          <Option type="Map">
+            <Option value="cellsize" name="parameter_name" type="QString"/>
+            <Option value="0" name="source" type="int"/>
+          </Option>
+        </Option>
+        <Option name="TARGET_USER_XMIN TARGET_USER_XMAX TARGET_USER_YMIN TARGET_USER_YMAX" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option name="static_value" type="invalid"/>
+          </Option>
+        </Option>
+        <Option name="TYPE" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="7" name="static_value" type="int"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+  </Option>
+  <Option name="help"/>
+  <Option value="" name="model_group" type="QString"/>
+  <Option value="Mosaico EVI 4" name="model_name" type="QString"/>
+  <Option name="parameterDefinitions" type="Map">
+    <Option name="agosto1" type="Map">
+      <Option name="default" type="invalid"/>
+      <Option value="Agosto 1" name="description" type="QString"/>
+      <Option value="8" name="flags" type="int"/>
+      <Option name="metadata"/>
+      <Option value="agosto1" name="name" type="QString"/>
+      <Option value="raster" name="parameter_type" type="QString"/>
+    </Option>
+    <Option name="agosto2" type="Map">
+      <Option name="default" type="invalid"/>
+      <Option value="Agosto 2" name="description" type="QString"/>
+      <Option value="8" name="flags" type="int"/>
+      <Option name="metadata"/>
+      <Option value="agosto2" name="name" type="QString"/>
+      <Option value="raster" name="parameter_type" type="QString"/>
+    </Option>
+    <Option name="agosto3" type="Map">
+      <Option name="default" type="invalid"/>
+      <Option value="Agosto 3" name="description" type="QString"/>
+      <Option value="8" name="flags" type="int"/>
+      <Option name="metadata"/>
+      <Option value="agosto3" name="name" type="QString"/>
+      <Option value="raster" name="parameter_type" type="QString"/>
+    </Option>
+    <Option name="agosto4" type="Map">
+      <Option name="default" type="invalid"/>
+      <Option value="Agosto 4" name="description" type="QString"/>
+      <Option value="8" name="flags" type="int"/>
+      <Option name="metadata"/>
+      <Option value="agosto4" name="name" type="QString"/>
+      <Option value="raster" name="parameter_type" type="QString"/>
+    </Option>
+    <Option name="cellsize" type="Map">
+      <Option value="1" name="data_type" type="int"/>
+      <Option value="30" name="default" type="QString"/>
+      <Option value="Cell size" name="description" type="QString"/>
+      <Option value="0" name="flags" type="int"/>
+      <Option value="30" name="max" type="double"/>
+      <Option name="metadata"/>
+      <Option value="30" name="min" type="double"/>
+      <Option value="cellsize" name="name" type="QString"/>
+      <Option value="number" name="parameter_type" type="QString"/>
+    </Option>
+    <Option name="gdal:translate_5:mosaico_finale" type="Map">
+      <Option value="true" name="create_by_default" type="bool"/>
+      <Option name="default" type="invalid"/>
+      <Option value="mosaico_finale" name="description" type="QString"/>
+      <Option value="0" name="flags" type="int"/>
+      <Option name="metadata"/>
+      <Option value="gdal:translate_5:mosaico_finale" name="name" type="QString"/>
+      <Option value="rasterDestination" name="parameter_type" type="QString"/>
+      <Option value="false" name="supports_non_file_outputs" type="bool"/>
+    </Option>
+    <Option name="giugno1" type="Map">
+      <Option name="default" type="invalid"/>
+      <Option value="Giugno 1" name="description" type="QString"/>
+      <Option value="8" name="flags" type="int"/>
+      <Option name="metadata"/>
+      <Option value="giugno1" name="name" type="QString"/>
+      <Option value="raster" name="parameter_type" type="QString"/>
+    </Option>
+    <Option name="giugno2" type="Map">
+      <Option name="default" type="invalid"/>
+      <Option value="Giugno 2" name="description" type="QString"/>
+      <Option value="8" name="flags" type="int"/>
+      <Option name="metadata"/>
+      <Option value="giugno2" name="name" type="QString"/>
+      <Option value="raster" name="parameter_type" type="QString"/>
+    </Option>
+    <Option name="giugno3" type="Map">
+      <Option name="default" type="invalid"/>
+      <Option value="Giugno 3" name="description" type="QString"/>
+      <Option value="8" name="flags" type="int"/>
+      <Option name="metadata"/>
+      <Option value="giugno3" name="name" type="QString"/>
+      <Option value="raster" name="parameter_type" type="QString"/>
+    </Option>
+    <Option name="giugno4" type="Map">
+      <Option name="default" type="invalid"/>
+      <Option value="Giugno 4" name="description" type="QString"/>
+      <Option value="8" name="flags" type="int"/>
+      <Option name="metadata"/>
+      <Option value="giugno4" name="name" type="QString"/>
+      <Option value="raster" name="parameter_type" type="QString"/>
+    </Option>
+    <Option name="lugilo1" type="Map">
+      <Option name="default" type="invalid"/>
+      <Option value="Luglio 1" name="description" type="QString"/>
+      <Option value="8" name="flags" type="int"/>
+      <Option name="metadata"/>
+      <Option value="lugilo1" name="name" type="QString"/>
+      <Option value="raster" name="parameter_type" type="QString"/>
+    </Option>
+    <Option name="luglio2" type="Map">
+      <Option name="default" type="invalid"/>
+      <Option value="Luglio 2" name="description" type="QString"/>
+      <Option value="8" name="flags" type="int"/>
+      <Option name="metadata"/>
+      <Option value="luglio2" name="name" type="QString"/>
+      <Option value="raster" name="parameter_type" type="QString"/>
+    </Option>
+    <Option name="luglio3" type="Map">
+      <Option name="default" type="invalid"/>
+      <Option value="Luglio 3" name="description" type="QString"/>
+      <Option value="8" name="flags" type="int"/>
+      <Option name="metadata"/>
+      <Option value="luglio3" name="name" type="QString"/>
+      <Option value="raster" name="parameter_type" type="QString"/>
+    </Option>
+    <Option name="luglio4" type="Map">
+      <Option name="default" type="invalid"/>
+      <Option value="Luglio 4" name="description" type="QString"/>
+      <Option value="8" name="flags" type="int"/>
+      <Option name="metadata"/>
+      <Option value="luglio4" name="name" type="QString"/>
+      <Option value="raster" name="parameter_type" type="QString"/>
+    </Option>
+    <Option name="maggio1" type="Map">
+      <Option name="default" type="invalid"/>
+      <Option value="Maggio 1" name="description" type="QString"/>
+      <Option value="8" name="flags" type="int"/>
+      <Option name="metadata"/>
+      <Option value="maggio1" name="name" type="QString"/>
+      <Option value="raster" name="parameter_type" type="QString"/>
+    </Option>
+    <Option name="maggio2" type="Map">
+      <Option name="default" type="invalid"/>
+      <Option value="Maggio 2" name="description" type="QString"/>
+      <Option value="8" name="flags" type="int"/>
+      <Option name="metadata"/>
+      <Option value="maggio2" name="name" type="QString"/>
+      <Option value="raster" name="parameter_type" type="QString"/>
+    </Option>
+    <Option name="maggio3" type="Map">
+      <Option name="default" type="invalid"/>
+      <Option value="Maggio 3" name="description" type="QString"/>
+      <Option value="8" name="flags" type="int"/>
+      <Option name="metadata"/>
+      <Option value="maggio3" name="name" type="QString"/>
+      <Option value="raster" name="parameter_type" type="QString"/>
+    </Option>
+    <Option name="maggio4" type="Map">
+      <Option name="default" type="invalid"/>
+      <Option value="Maggio 4" name="description" type="QString"/>
+      <Option value="8" name="flags" type="int"/>
+      <Option name="metadata"/>
+      <Option value="maggio4" name="name" type="QString"/>
+      <Option value="raster" name="parameter_type" type="QString"/>
+    </Option>
+  </Option>
+  <Option name="parameters" type="Map">
+    <Option name="agosto1" type="Map">
+      <Option value="agosto1" name="component_description" type="QString"/>
+      <Option value="114" name="component_pos_x" type="double"/>
+      <Option value="544" name="component_pos_y" type="double"/>
+      <Option value="agosto1" name="name" type="QString"/>
+    </Option>
+    <Option name="agosto2" type="Map">
+      <Option value="agosto2" name="component_description" type="QString"/>
+      <Option value="333" name="component_pos_x" type="double"/>
+      <Option value="546" name="component_pos_y" type="double"/>
+      <Option value="agosto2" name="name" type="QString"/>
+    </Option>
+    <Option name="agosto3" type="Map">
+      <Option value="agosto3" name="component_description" type="QString"/>
+      <Option value="565" name="component_pos_x" type="double"/>
+      <Option value="543" name="component_pos_y" type="double"/>
+      <Option value="agosto3" name="name" type="QString"/>
+    </Option>
+    <Option name="agosto4" type="Map">
+      <Option value="agosto4" name="component_description" type="QString"/>
+      <Option value="790" name="component_pos_x" type="double"/>
+      <Option value="545" name="component_pos_y" type="double"/>
+      <Option value="agosto4" name="name" type="QString"/>
+    </Option>
+    <Option name="cellsize" type="Map">
+      <Option value="cellsize" name="component_description" type="QString"/>
+      <Option value="1010" name="component_pos_x" type="double"/>
+      <Option value="60" name="component_pos_y" type="double"/>
+      <Option value="cellsize" name="name" type="QString"/>
+    </Option>
+    <Option name="giugno1" type="Map">
+      <Option value="giugno1" name="component_description" type="QString"/>
+      <Option value="120" name="component_pos_x" type="double"/>
+      <Option value="245" name="component_pos_y" type="double"/>
+      <Option value="giugno1" name="name" type="QString"/>
+    </Option>
+    <Option name="giugno2" type="Map">
+      <Option value="giugno2" name="component_description" type="QString"/>
+      <Option value="346" name="component_pos_x" type="double"/>
+      <Option value="246" name="component_pos_y" type="double"/>
+      <Option value="giugno2" name="name" type="QString"/>
+    </Option>
+    <Option name="giugno3" type="Map">
+      <Option value="giugno3" name="component_description" type="QString"/>
+      <Option value="563" name="component_pos_x" type="double"/>
+      <Option value="245" name="component_pos_y" type="double"/>
+      <Option value="giugno3" name="name" type="QString"/>
+    </Option>
+    <Option name="giugno4" type="Map">
+      <Option value="giugno4" name="component_description" type="QString"/>
+      <Option value="780" name="component_pos_x" type="double"/>
+      <Option value="246" name="component_pos_y" type="double"/>
+      <Option value="giugno4" name="name" type="QString"/>
+    </Option>
+    <Option name="lugilo1" type="Map">
+      <Option value="lugilo1" name="component_description" type="QString"/>
+      <Option value="119" name="component_pos_x" type="double"/>
+      <Option value="382" name="component_pos_y" type="double"/>
+      <Option value="lugilo1" name="name" type="QString"/>
+    </Option>
+    <Option name="luglio2" type="Map">
+      <Option value="luglio2" name="component_description" type="QString"/>
+      <Option value="342" name="component_pos_x" type="double"/>
+      <Option value="382" name="component_pos_y" type="double"/>
+      <Option value="luglio2" name="name" type="QString"/>
+    </Option>
+    <Option name="luglio3" type="Map">
+      <Option value="luglio3" name="component_description" type="QString"/>
+      <Option value="560" name="component_pos_x" type="double"/>
+      <Option value="384" name="component_pos_y" type="double"/>
+      <Option value="luglio3" name="name" type="QString"/>
+    </Option>
+    <Option name="luglio4" type="Map">
+      <Option value="luglio4" name="component_description" type="QString"/>
+      <Option value="783" name="component_pos_x" type="double"/>
+      <Option value="383" name="component_pos_y" type="double"/>
+      <Option value="luglio4" name="name" type="QString"/>
+    </Option>
+    <Option name="maggio1" type="Map">
+      <Option value="maggio1" name="component_description" type="QString"/>
+      <Option value="120" name="component_pos_x" type="double"/>
+      <Option value="60" name="component_pos_y" type="double"/>
+      <Option value="maggio1" name="name" type="QString"/>
+    </Option>
+    <Option name="maggio2" type="Map">
+      <Option value="maggio2" name="component_description" type="QString"/>
+      <Option value="340" name="component_pos_x" type="double"/>
+      <Option value="60" name="component_pos_y" type="double"/>
+      <Option value="maggio2" name="name" type="QString"/>
+    </Option>
+    <Option name="maggio3" type="Map">
+      <Option value="maggio3" name="component_description" type="QString"/>
+      <Option value="560" name="component_pos_x" type="double"/>
+      <Option value="59" name="component_pos_y" type="double"/>
+      <Option value="maggio3" name="name" type="QString"/>
+    </Option>
+    <Option name="maggio4" type="Map">
+      <Option value="maggio4" name="component_description" type="QString"/>
+      <Option value="775" name="component_pos_x" type="double"/>
+      <Option value="60" name="component_pos_y" type="double"/>
+      <Option value="maggio4" name="name" type="QString"/>
+    </Option>
+  </Option>
+</Option>
