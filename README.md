@@ -1,3 +1,3 @@
-# GIS-TIPS-AND-TRICKS
+# GIS-RESOURCES
 
-The repo contains some tips and tricks of the GIS world and in particular of QGIS.
+The repo contains some resources about the GIS world and in particular of QGIS.
