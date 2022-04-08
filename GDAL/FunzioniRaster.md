@@ -28,10 +28,22 @@ gdalwarp -s_srs EPSG:3004 -t_srs EPSG:32633 -ot Byte -r near -co COMPRESS=DEFLAT
 ```
 
 ## Mosaicare immagini
+### Di default utilizza il metodo nearest neighbour
+
 mergeInputFiles.txt file di testo con elenco raster da mosaicare nella cartella (un raster per ogni riga)
 ```
 gdal_merge.py -co COMPRESS=jpeg -ot Byte -o output.tif --optfile mergeInputFiles.txt
 ```
+
+### Per controllare il metodo, utilizzare gdalwarp
+
+```
+C:> cd \path\to\input_images
+C:> dir /o/b *.tif > list.txt
+
+gdalwarp -multi -r bilinear -ot Float32 -t_srs EPSG:25833 --optfile list.txt output.tif
+```
+
 ## Salvare un raster nel formato geopackage
 ```
 gdal_translate --config OGR_SQLITE_SYNCHRONOUS OFF -co  APPEND_SUBDATASET=YES -co TILE_FORMAT=WEBP -a_srs EPSG:21781 -of GPKG input.tif output.gpkg
