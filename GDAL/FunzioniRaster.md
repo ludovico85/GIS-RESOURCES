@@ -41,7 +41,7 @@ gdal_merge.py -co COMPRESS=jpeg -ot Byte -o output.tif --optfile mergeInputFiles
 C:> cd \path\to\input_images
 C:> dir /o/b *.tif > list.txt
 
-gdalwarp -multi -r bilinear -ot Float32 -t_srs EPSG:25833 --optfile list.txt output.tif
+gdalwarp -s_srs EPSG:4326 -t_srs EPSG:25833 -multi -r bilinear -ot Float32 --optfile list.txt output.tif
 ```
 
 ## Salvare un raster nel formato geopackage
