@@ -1,12 +1,10 @@
 # Geoprocessing
 
 
-<img src="img/CLIP.jpg" width="250">
+<img src="img/CLIP.jpg" width="500">
 
-![](./img/CLIP.jpg =250x)
+<img src="img/INTERSECT.jpg" width="500">
 
-![](./img/INTERSECT.jpg)
+<img src="img/UNION.jpg" width="500">
 
-![](./img/UNION.jpg)
-
-![](./img/SYMMETRICAL_DIFFERENCE.jpg)
+<img src="img/SYMMETRICAL_DIFFERENCE.jpg" width="500">
