@@ -2,7 +2,7 @@
 
 
 
-![](./img/CLIP.jpg)
+![](./img/CLIP.jpg =250x)
 
 ![](./img/INTERSECT.jpg)
 
