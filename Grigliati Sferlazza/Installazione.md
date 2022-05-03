@@ -32,7 +32,7 @@ VALUES (
 'EPSG', -- target_crs_auth_name
 '4258', -- target_crs_name
 NULL,  -- accuracy,
-'ESPG', -- grid_param_auth_name
+'EPSG', -- grid_param_auth_name
 '1127', -- grid_param_code Area of use Tutta Italia
 NULL, -- grid_param_name
 'ItalyRome40ToWGS84_NTV2_GN.gsb', -- grid_name
