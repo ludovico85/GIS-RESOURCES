@@ -44,4 +44,5 @@ NULL, -- interpolation_crs_auth_name
 NULL, -- interpolation_crs_code
 NULL, -- operation_version
 NULL, -- deprecated
+);
 ```
