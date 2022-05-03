@@ -35,7 +35,7 @@ NULL,  -- accuracy,
 'ESPG', -- grid_param_auth_name
 '1127', -- grid_param_code Area of use Tutta Italia
 NULL, -- grid_param_name
-ItalyRome40ToWGS84_NTV2_GN.gsb, -- grid_name
+'ItalyRome40ToWGS84_NTV2_GN.gsb', -- grid_name
 'EPSG', -- grid2_param_auth_name
 '8656', -- grid2_param_code
 'Latitude and longitude difference file', -- grid2_param_name
@@ -43,6 +43,6 @@ NULL, -- grid2_name
 NULL, -- interpolation_crs_auth_name
 NULL, -- interpolation_crs_code
 NULL, -- operation_version
-NULL, -- deprecated
+NULL -- deprecated
 );
 ```
