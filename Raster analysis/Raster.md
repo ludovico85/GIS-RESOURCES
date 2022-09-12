@@ -19,8 +19,13 @@
 ## Fill raster (raster1) (no data value) con valori provenienti da un altro raster (raster2)
 1) Settare l'estensione del raster2 uguale a quella del raster1 (anche la risoluzione deve essere identica) via gdalwarp
 
-`gdalwarp -te xmin, ymin, xmax, ymax input.tif output.tif`
+```
+gdalwarp -te xmin, ymin, xmax, ymax input.tif output.tif
+```
 
 2) Deselzionare il valore di trasparenza del nodata in entrambi i raster (`Proprietà` -> `Trasparenza`) (ad esempio -9999)
 
-3) Nel calcolatore raster inserire la seguente formula `("raster1" = -9999)*"raster2" + ("raster1" != -9999)*"raster1"`
+3) Nel calcolatore raster inserire la seguente formula
+```
+("raster1" = -9999)*"raster2" + ("raster1" != -9999)*"raster1"
+```
