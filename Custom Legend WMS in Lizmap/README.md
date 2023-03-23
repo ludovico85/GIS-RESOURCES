@@ -10,13 +10,13 @@ L'esempio si riferisce al servizio wms ISPRA IdroGEO ed in particolare al layer 
 
 La legenda è stata ricostruita con il layout di QGIS
 
-<img src="https://github.com/ludovico85/GIS-RESOURCES/blob/master/Custom%20Legend%20WMS%20in%20Lizmap/wms_legends/idrogeo_frane_iffi.png?raw=true" height="50%" width="50%">
+<img src="https://github.com/ludovico85/GIS-RESOURCES/blob/master/Custom%20Legend%20WMS%20in%20Lizmap/wms_legends/idrogeo_frane_iffi.png?raw=true" height="20%" width="20%">
 
 Utilizzando lo strumento ispeziona di Google Chrome oppure lo strumento Analizza di Mozzilla Firefox individuare gli oggetti layer e legenda da utilizzare nello script. Nel caso in esame:
 . layer-fenomeni_franosi
 . legend-fenomeni_franosi
 
-<img src="https://github.com/ludovico85/GIS-RESOURCES/blob/master/Custom%20Legend%20WMS%20in%20Lizmap/img/image_2.png?raw=true" height="50%" width="50%">
+<img src="https://github.com/ludovico85/GIS-RESOURCES/blob/master/Custom%20Legend%20WMS%20in%20Lizmap/img/image_2.png?raw=true" height="80%" width="80%">
 
 Lo script da implementare permette il caricamento della legenda custom al caricamento della legenda di default
 ```
