@@ -32,4 +32,7 @@ lizMap.events.on({
 })
 
 ```
+Il risultato finale sarà:
+
+<img src="https://github.com/ludovico85/GIS-RESOURCES/blob/master/Custom%20Legend%20WMS%20in%20Lizmap/img/image_3.png?raw=true" height="80%" width="80%">
 
