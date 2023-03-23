@@ -2,7 +2,7 @@
 ## Esempio
 L'esempio si riferisce al servizio wms ISPRA IdroGEO ed in particolare al layer Fenomeni Franosi 'https://idrogeo.isprambiente.it/geoserver/idrogeo/wms'
 
-<img src="https://raw.githubusercontent.com/ludovico85/CAD-TIPS/master/img/scala.PNG" height="50%" width="50%">
+<img src="https://github.com/ludovico85/GIS-RESOURCES/blob/master/Custom%20Legend%20WMS%20in%20Lizmap/img/image_1.PNG?raw=true" height="50%" width="50%">
 
 
 La compressione jpeg è compatibile sono con una profonodità del pixel pari a 8 o 12 bit
