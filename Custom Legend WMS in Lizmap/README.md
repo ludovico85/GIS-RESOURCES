@@ -1,5 +1,5 @@
-# Javascript per Lizmap per la modifica della legenda di defautl di un servizio WMS (custom legend)
-Alcune volte capita che la legenda distribuita tramite servizio WMS non si ottimizzata e la restituzione in Lizmap non è sempre ottimale. E' possibile, quindi, bypasare la legenda che viene distribuita in automatico e sostituirla con un'immagine personalizzata.
+# Customizzazione della legenda di defautl di un servizio WMS in Lizmap
+Alcune volte capita che la legenda distribuita tramite servizio WMS non sia ottimizzata e la restituzione in Lizmap non è sempre ottimale. E' possibile, quindi, bypasare la legenda che viene distribuita in automatico e sostituirla con un'immagine personalizzata.
 Per questo scopo è necessario creare uno script in Javascript da integrare in Lizamp.
 Per l'implemetazione di script Javascript in Lizamp fare riferimento alla documentazione ufficiale https://docs.lizmap.com/3.4/en/publish/customization/javascript.html
  
@@ -34,5 +34,5 @@ lizMap.events.on({
 ```
 Il risultato finale sarà:
 
-<img src="https://github.com/ludovico85/GIS-RESOURCES/blob/master/Custom%20Legend%20WMS%20in%20Lizmap/img/image_3.png?raw=true" height="80%" width="80%">
+<img src="https://github.com/ludovico85/GIS-RESOURCES/blob/master/Custom%20Legend%20WMS%20in%20Lizmap/img/image_3.png?raw=true" height="50%" width="50%">
 
