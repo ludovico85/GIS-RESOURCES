@@ -48,6 +48,10 @@ gdalwarp -s_srs EPSG:4326 -t_srs EPSG:25833 -multi -r bilinear -ot Float32 --opt
 ```
 gdal_translate --config OGR_SQLITE_SYNCHRONOUS OFF -co  APPEND_SUBDATASET=YES -co TILE_FORMAT=WEBP -a_srs EPSG:21781 -of GPKG input.tif output.gpkg
 ```
+```
+gdal_translate -of GPKG -co APPEND_SUBDATASET=YES -co RASTER_TABLE=raster_name input.tif output.gpkg"
+```
+
 ### Creare le piramidi
 ```
 gdaladdo --config OGR_SQLITE_SYNCHRONOUS OFF -r AVERAGE output.gpkg 2 4 8 16 32 64 128 256
