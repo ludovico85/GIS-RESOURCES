@@ -30,7 +30,7 @@ Il campo distanza contiene il valore di distanza da un punto stabilito rispetto 
 Esempio: trovare la linea più vicina al punto (overlay_nearest). Il layer è il nome del layer di interesse, "id" è il campo (univoco in questo caso) che serve per valutare gli elementi del layer di destinazione. 
 
 
-``overlay_nearest (layer:='tratto', expression:="id")[0] -- restituisce l'elemento``
-
-
+``overlay_nearest (layer:='tratto', expression:="id")[0]`` restituisce l'elemento del layer tratto più vicino al layer sorgente
+``attribute(get_feature_by_id('tratto',array_to_string(overlay_nearest ('tratto',  "id" ))),'nome_tratto')`` restituisce il valore dell'attributo (nome_tratto) del layer tratto più vicino al layer sorgente 
+``make_line($geometry,(closest_point(geometry(get_feature_by_id('tratto', array_to_string(overlay_nearest ('tratto', "id")))),$geometry)))`` Rappresentazione grafica del problema
 ![alt text](https://github.com/ludovico85/GIS-RESOURCES/blob/master/Field%20Calculator/img/overlay_nearest.PNG?raw=true)
