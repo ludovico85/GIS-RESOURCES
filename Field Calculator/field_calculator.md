@@ -2,7 +2,7 @@
 ## aggregate
 Restituisce valori aggregati (array, concatenati, somma, media, min, max, ...) di un campo degli elementi di un altro vettore.
 
-aggregate (layer, aggregate, expression, filter, concatenator, order_by)
+``aggregate (layer, aggregate, expression, filter, concatenator, order_by)``
 
 Esempio: 
 
@@ -21,5 +21,11 @@ Esempio:
 array_find(array_sort(array_agg("distanza")), distanza)
 
 Il campo distanza contiene il valore di distanza da un punto stabilito rispetto ai punti del layer
+
+
+## overaly
+### trovare la linea più vicina al punto
+
+
 
 ![alt text](https://github.com/ludovico85/GIS-RESOURCES/blob/master/Field%20Calculator/img/overlay_nearest.PNG?raw=true)
