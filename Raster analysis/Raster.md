@@ -46,3 +46,12 @@ gdalwarp -te xmin, ymin, xmax, ymax input.tif output.tif
 ```
 ("raster1" = -9999)*"raster2" + ("raster1" != -9999)*"raster1"
 ```
+
+# APPLICARE FUNZIONI SIGMODALI CRESCENTI O DECRESCENTI
+Esempio: Voglio applicare al mio raster un funzione sigmoidale crescente con limite inferiore pari a 14 (r<14 = 0) e limite superiore pari a 35 (r>35=0). Tra questi due estremi i valori devono essere normalizzati tra 0 e 1.
+
+Dal calcolatore raster
+```
+("raster" < 14) * 0 + (("raster" >= 14) AND ("raster" <= 35)) * (("raster" - 14) / (35 - 14)) + ("raster" > 35) * 1
+
+```
