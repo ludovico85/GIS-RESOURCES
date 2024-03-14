@@ -6,7 +6,7 @@ Serie di espressioni da utilizare nel calcolatore campi di QGIS
 - Copiare la funzione nella cartella `expressions` del profilo di QGIS. Esempio su Windows `C:\Users\Pc\AppData\Roaming\QGIS\QGIS3\profiles\Default\python\expressions` dove `Default` è il nome del profilo utilizzato.
 
 ## Download delle espressioni
-- [edifici_veneto_info.py](https://github.com/ludovico85/GIS-RESOURCES/blob/master/python_expression/expression/edifici_veneto_info.py)
+- [edifici_veneto_info.py](https://raw.githubusercontent.com/ludovico85/GIS-RESOURCES/master/python_expression/expression/edifici_veneto_info.py)
 
 ### edifici_veneto_info.py
 L'espressione permette di ottenere a partire da una geometria puntuale, le informazioni associate alla risorsa WMS [Edifici](https://gaia.arpa.veneto.it/layers/dbnir:geonode:v_edifici) del Geoportale ARPAV.
