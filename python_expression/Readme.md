@@ -31,5 +31,5 @@ Utilizzo: `edifici_veneto_info(x,y,'variabile', EPSG)`
 
 Esempio: `edifici_veneto_info($x, $y, 'altezza', 3003)` -> 5.6
 
-[!IMPORTANT] 
-Il wms e le coordinate dei punti (o il layer utilizzato) devono avere lo stesso sistema di riferimento!
+> [!NOTE] 
+> Il wms e le coordinate dei punti (o il layer utilizzato) devono avere lo stesso sistema di riferimento!
