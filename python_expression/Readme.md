@@ -16,11 +16,11 @@ Utilizzo: `edifici_veneto_info(x,y,'variabile', EPSG)`
 - **y** coordinata x del punto
 - **variabile** valore dell'edificio che si vuole ottenre. I valori ammessi sono:
 	- piede
-      piede_min
-      piede_max
-      altezza
-      gronda
-      piani_fuori_terra
+    - piede_min
+	- piede_max
+	- altezza
+	- gronda
+	- piani_fuori_terra
 - **EPSG** il codice EPSG con in quale viene caricato il wms. I valori ammessi dal servzio wms sono:
 	- 3003
     - 3857
