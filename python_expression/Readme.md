@@ -1,5 +1,5 @@
-# python_espression
-Serie di expressioni da utilizare nel calcolatroe campi di QGIS
+# python_expressions
+Serie di espressioni da utilizare nel calcolatore campi di QGIS
 
 ## Installazione delle espressioni
 - Scaricare la funzione con estensione .py
