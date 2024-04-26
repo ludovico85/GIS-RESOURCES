@@ -9,7 +9,7 @@ Appunti e script per l'utilizzo di GEE.
 
 ## Creazione di un progetto
 1. Al primo accesso verrà chiesto se creare un nuovo progetto oppure se si è autorizzati ad utilizzare un progetto esistente. Scegliere la prima opzione.
-> [!IMPORTANTE]  
+> [!IMPORTANT]  
 > GEE è disponibile per utilizzo commerciale (a pagamento) oppure gratuito per utilizzo accademico e di ricerca.
 2. Scegliere il profilo e continuare con la creazione del progetto.
 3. Accedere all'Editor.
@@ -18,7 +18,7 @@ Appunti e script per l'utilizzo di GEE.
 
 ## Caricare dataset
 Per caricare dataset geografici si deve utilizzare l'Asset Manager nell'editor del codice. Maggiori informazioni [qui](https://developers.google.com/earth-engine/guides/asset_manager)
-Esempio: Caricare lo shapefile dei comuni ISTAT (consiglio di covertirli in WGS84 ESPG:4326)
+Esempio: Caricare lo shapefile dei comuni ISTAT (consiglio di covertirli in WGS84 EPSG:4326)
 1. Recarsi su Assets, cliccare su NEW e creare una nuova cartella
 2. Cliccare su NEW, Shapefiles, cliccare su SELECT e selezionare i file che compongono lo shapefile (.shp, .shx, .dbf, .prj)
 3. Cliccare su UPLOAD per caricare il file
