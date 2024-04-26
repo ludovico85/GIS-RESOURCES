@@ -60,6 +60,16 @@ Il dataset utilizzato in questo esempio è il [Modello Digitale della Canopy a l
 ```javascript
 var canopy_ht = ee.ImageCollection("projects/meta-forest-monitoring-okw37/assets/CanopyHeight")
 ```
+
+Comandi utilizzati:
+- Caricamento dati vettoriali [ee.FeatureCollection](https://developers.google.com/earth-engine/apidocs/ee-featurecollection)
+- Visualizzare una mappa [Map.addLayer](https://developers.google.com/earth-engine/apidocs/map-addlayer)
+- Esportazione [Export.image.toDrive](https://developers.google.com/earth-engine/apidocs/export-image-todrive)
+
+
+
+
+
 Per visualizzare la zona d'interesse utilizziamo il seguente script
 
 ```javascript
@@ -116,6 +126,6 @@ Per terminare lo scaricamento, recarsi in Tasks e cliccare su Run.
 ![alt text](https://github.com/ludovico85/GIS-RESOURCES/blob/master/GEE/img/img9.png?raw=true)
 
 
--Per le opzioni di esportazione vedere [Export.image.toDrive](https://developers.google.com/earth-engine/apidocs/export-image-todrive)
+
 
 
