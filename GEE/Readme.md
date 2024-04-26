@@ -24,10 +24,13 @@ Esempio: Caricare lo shapefile dei comuni ISTAT (consiglio di covertirli in WGS8
 ![alt text](https://github.com/ludovico85/GIS-RESOURCES/blob/master/GEE/img/img1.png?raw=true)
 
 2. Cliccare su NEW, Shapefiles, cliccare su SELECT e selezionare i file che compongono lo shapefile (.shp, .shx, .dbf, .prj)
+
+![alt text](https://github.com/ludovico85/GIS-RESOURCES/blob/master/GEE/img/img2.png?raw=true)
+
 3. Cliccare su UPLOAD per caricare il file
 4. Attendere il caricamento. Lo stato del caricamento si può verificare nel tab Tasks
 
-
+![alt text](https://github.com/ludovico85/GIS-RESOURCES/blob/master/GEE/img/img3.png?raw=true)
 
 
 
