@@ -20,6 +20,9 @@ Appunti e script per l'utilizzo di GEE.
 Per caricare dataset geografici si deve utilizzare l'Asset Manager nell'editor del codice. Maggiori informazioni [qui](https://developers.google.com/earth-engine/guides/asset_manager)
 Esempio: Caricare lo shapefile dei comuni ISTAT (consiglio di covertirli in WGS84 EPSG:4326)
 1. Recarsi su Assets, cliccare su NEW e creare una nuova cartella
+
+![alt text](https://github.com/ludovico85/GIS-RESOURCES/blob/master/GEE/img/img1.png?raw=true)
+
 2. Cliccare su NEW, Shapefiles, cliccare su SELECT e selezionare i file che compongono lo shapefile (.shp, .shx, .dbf, .prj)
 3. Cliccare su UPLOAD per caricare il file
 4. Attendere il caricamento. Lo stato del caricamento si può verificare nel tab Tasks
