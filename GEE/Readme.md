@@ -7,9 +7,9 @@ Appunti e script per l'utilizzo di GEE.
 3. Segui le istruzione per la registrazione a Google Earth Engine
 
 ## Caricare dataset
-Per caricare dataset geografici si deve utilizzare l'Asset Manager nell'editor del codice. Ulteriori istruzioni [qui](https://developers.google.com/earth-engine/guides/asset_manager)
+Per caricare dataset geografici si deve utilizzare l'Asset Manager nell'editor del codice. Maggiori informazioni [qui](https://developers.google.com/earth-engine/guides/asset_manager)
 
-Esempio: Caricare lo shapefile dei comuni ISTAT (*consiglio di covertirli in WGS84 ESPG:4326)
+Esempio: Caricare lo shapefile dei comuni ISTAT (** consiglio di covertirli in WGS84 ESPG:4326)
 
 
 
