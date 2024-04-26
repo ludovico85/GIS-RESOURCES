@@ -55,19 +55,17 @@ Map.addLayer(campobasso, {color: 'red'}, 'FeatureCollection');
 ![alt text](https://github.com/ludovico85/GIS-RESOURCES/blob/master/GEE/img/img6.png?raw=true)
 
 
-## Esercizio 01 - Ritagliare un'immagine raster
-Il dataset utilizzato in questo esempio è il [Modello Digitale della Canopy a livello globale a 1 metro di risoluzione](https://gee-community-catalog.org/projects/meta_trees/?fbclid=IwZXh0bgNhZW0CMTAAAR0qEUr0dSkj3WQ5cUIHvfOwjLtXFtxEeUysNqynxtBMevFEF8CaP6a0OPQ_aem_AfeRztZ1Y8TUxqdUK-xLBSjkuWb8X6HCgjwrk2FmtjCLLz3N4ZGPzqCmujvdwAwENdIdnP5aKeakRJ3LSOsSP-XE) accessibile su GEE con il seguente codice sorgente
+## Esercizio 01 - Ritagliare ed esportare un raster
+Il raster utilizzato in questo esempio è il [Modello Digitale della Canopy a livello globale a 1 metro di risoluzione](https://gee-community-catalog.org/projects/meta_trees/?fbclid=IwZXh0bgNhZW0CMTAAAR0qEUr0dSkj3WQ5cUIHvfOwjLtXFtxEeUysNqynxtBMevFEF8CaP6a0OPQ_aem_AfeRztZ1Y8TUxqdUK-xLBSjkuWb8X6HCgjwrk2FmtjCLLz3N4ZGPzqCmujvdwAwENdIdnP5aKeakRJ3LSOsSP-XE) accessibile su GEE con il seguente codice sorgente
 ```javascript
 var canopy_ht = ee.ImageCollection("projects/meta-forest-monitoring-okw37/assets/CanopyHeight")
 ```
 
 Comandi utilizzati:
 - Caricamento dati vettoriali [ee.FeatureCollection](https://developers.google.com/earth-engine/apidocs/ee-featurecollection)
+- Caricamento dati raster [ee.ImageCollection](https://developers.google.com/earth-engine/apidocs/ee-imagecollection)
 - Visualizzare una mappa [Map.addLayer](https://developers.google.com/earth-engine/apidocs/map-addlayer)
 - Esportazione [Export.image.toDrive](https://developers.google.com/earth-engine/apidocs/export-image-todrive)
-
-
-
 
 
 Per visualizzare la zona d'interesse utilizziamo il seguente script
@@ -75,8 +73,6 @@ Per visualizzare la zona d'interesse utilizziamo il seguente script
 ```javascript
 var comuni = ee.FeatureCollection('projects/ee-frateludovico-test/assets/dataset/molise') // Assegna il dato alla variabile comuni
 var studyarea = comuni.filter('COMUNE == "Rionero Sannitico"') // selezione del comune che viene assegnato alla nuova variabile studyarea
-
-
 
 var palettes = require('users/gena/packages:palettes'); // palette di colori per visualizzare il dataset raster
 var canopyHeight = ee.ImageCollection('projects/meta-forest-monitoring-okw37/assets/CanopyHeight').mosaic().clip(studyarea);
@@ -127,5 +123,7 @@ Per terminare lo scaricamento, recarsi in Tasks e cliccare su Run.
 
 
 
-
+> [!NOTE]  
+> Per l'esportazione del raster sarà necessario qualche minuto.
+> Se l'area di ritaglio è troppo estesa si potrebbe ricevre un'errore. In questo caso bisogna modificare i parametri di `maxPixels` e di `shardSize`
 
