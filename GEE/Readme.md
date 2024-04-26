@@ -38,7 +38,11 @@ Esempio: Caricare lo shapefile dei comuni ISTAT della regione d'interesse. (Moli
 ![alt text](https://github.com/ludovico85/GIS-RESOURCES/blob/master/GEE/img/img4.png?raw=true)
 8. Recarsi nell'editor dello script e digitare
 ```javascript
-var study_area = ee.FeatureCollection('projects/ee-frateludovico-test/assets/dataset/molise')
+var study_area = ee.FeatureCollection('projects/ee-frateludovico-test/assets/dataset/molise')-- eprea
+
+Map.addLayer(studyarea, {color: 'green'}, 'FeatureCollection');
+
+
 ```
 
 
