@@ -116,6 +116,6 @@ Per terminare lo scaricamento, recarsi in Tasks e cliccare su Run.
 ![alt text](https://github.com/ludovico85/GIS-RESOURCES/blob/master/GEE/img/img9.png?raw=true)
 
 
-Per le opzioni di esportazione vedere [Export.image.toDrive](https://developers.google.com/earth-engine/apidocs/export-image-todrive)
+-Per le opzioni di esportazione vedere [Export.image.toDrive](https://developers.google.com/earth-engine/apidocs/export-image-todrive)
 
 
