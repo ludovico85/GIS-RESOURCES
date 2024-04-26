@@ -38,14 +38,22 @@ Esempio: Caricare lo shapefile dei comuni ISTAT della regione d'interesse. (Moli
 ![alt text](https://github.com/ludovico85/GIS-RESOURCES/blob/master/GEE/img/img4.png?raw=true)
 8. Recarsi nell'editor dello script e digitare
 ```javascript
-var study_area = ee.FeatureCollection('projects/ee-frateludovico-test/assets/dataset/molise') // eprea
+var studyarea = ee.FeatureCollection('projects/ee-frateludovico-test/assets/dataset/molise') // Assegna il dato alla variabile studyarea
+Map.addLayer(studyarea, {color: 'green'}, 'FeatureCollection'); // visualizza il dato
+```
+9. Cliccare su Run
+
+![alt text](https://github.com/ludovico85/GIS-RESOURCES/blob/master/GEE/img/img5.png?raw=true)
+
+10. E' possibile selezionare solo una feature del dataset.
+```javascript
+var studyarea = ee.FeatureCollection('projects/ee-frateludovico-test/assets/dataset/molise') // Assegna il dato alla variabile studyarea
+var campobasso = studyarea.filter('COMUNE == "Campobasso"') // selezione
 
 Map.addLayer(studyarea, {color: 'green'}, 'FeatureCollection');
-
-
+Map.addLayer(campobasso, {color: 'red'}, 'FeatureCollection');
 ```
-
-
+![alt text](https://github.com/ludovico85/GIS-RESOURCES/blob/master/GEE/img/img6.png?raw=true)
 
 
 
