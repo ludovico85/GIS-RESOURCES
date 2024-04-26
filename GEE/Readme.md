@@ -60,56 +60,46 @@ Il dataset utilizzato in questo esempio è il [Modello Digitale della Canopy a l
 ```javascript
 var canopy_ht = ee.ImageCollection("projects/meta-forest-monitoring-okw37/assets/CanopyHeight")
 ```
+Per visualizzare la zona d'interesse utilizziamo il seguente script
+
+```javascript
+var comuni = ee.FeatureCollection('projects/ee-frateludovico-test/assets/dataset/molise') // Assegna il dato alla variabile comuni
+var studyarea = comuni.filter('COMUNE == "Rionero Sannitico"') // selezione del comune che viene assegnato alla nuova variabile studyarea
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-var studyarea = ee.FeatureCollection('projects/ee-frateludovico/assets/data/rionero')
+var palettes = require('users/gena/packages:palettes'); // palette di colori per visualizzare il dataset raster
+var canopyHeight = ee.ImageCollection('projects/meta-forest-monitoring-okw37/assets/CanopyHeight').mosaic().clip(studyarea);
 
 Map.addLayer(studyarea, {color: 'green'}, 'FeatureCollection');
-var palettes = require('users/gena/packages:palettes');
-
-var canopyHeight = ee.ImageCollection('projects/meta-forest-monitoring-okw37/assets/CanopyHeight').mosaic().clip(studyarea);
-var treenotree = canopyHeight.updateMask(canopyHeight.gte(1)).clip(studyarea);
-
-Map.addLayer(treenotree, {
-    min: 0,
-    max: 3,
-    palette: ['440154', 'fde725']
-}, 'Canopy height (>=3 meter)', false);
-
 Map.addLayer(canopyHeight, {
     min: 0,
     max: 25,
     palette: palettes.matplotlib.viridis[7]
 }, 'Canopy Height [meters]');
 
-var projection = canopyHeight.projection().getInfo();
-print(projection)
+```
+![alt text](https://github.com/ludovico85/GIS-RESOURCES/blob/master/GEE/img/img7.png?raw=true)
 
+
+Per esportare la mappa raster utilizziamo il seguente script che salva il file risultante GeoTiff nel nostro account di Google Drive.
+
+```javascript
+var comuni = ee.FeatureCollection('projects/ee-frateludovico-test/assets/dataset/molise') // Assegna il dato alla variabile comuni
+var studyarea = comuni.filter('COMUNE == "Rionero Sannitico"') // selezione del comune che viene assegnato alla nuova variabile studyarea
+
+
+
+var palettes = require('users/gena/packages:palettes'); // palette di colori per visualizzare il dataset raster
+
+var canopyHeight = ee.ImageCollection('projects/meta-forest-monitoring-okw37/assets/CanopyHeight').mosaic().clip(studyarea); // ritaglio del raster
+
+Map.addLayer(studyarea, {color: 'green'}, 'FeatureCollection');
+Map.addLayer(canopyHeight, {
+    min: 0,
+    max: 25,
+    palette: palettes.matplotlib.viridis[7]
+}, 'Canopy Height [meters]');
 
 Export.image.toDrive({
  image: canopyHeight,
@@ -117,5 +107,15 @@ Export.image.toDrive({
  region: studyarea
 });
 
+```
+Per terminare lo scaricamento, recarsi in Tasks e cliccare su Run.
+
+
+![alt text](https://github.com/ludovico85/GIS-RESOURCES/blob/master/GEE/img/img8.png?raw=true)
+
+![alt text](https://github.com/ludovico85/GIS-RESOURCES/blob/master/GEE/img/img9.png?raw=true)
+
+
+Per le opzioni di esportazione vedere [Export.image.toDrive](https://developers.google.com/earth-engine/apidocs/export-image-todrive)
 
 
