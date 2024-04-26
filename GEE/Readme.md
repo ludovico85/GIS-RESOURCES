@@ -2,4 +2,6 @@
 Appunti e script per l'utilizzo di GEE.
 
 ## Creazione account
-1. Vai su http://code.earthengine.google.com/
+1. Vai su 
+
+[link](http://code.earthengine.google.com/){:target="_blank"}
