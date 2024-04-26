@@ -16,7 +16,7 @@ Appunti e script per l'utilizzo di GEE.
 
 
 
-## Caricare dataset
+## Caricare e visualizzare un dataset
 Per caricare dataset geografici si deve utilizzare l'Asset Manager nell'editor del codice. Maggiori informazioni [qui](https://developers.google.com/earth-engine/guides/asset_manager)
 Esempio: Caricare lo shapefile dei comuni ISTAT della regione d'interesse. (Molise - consiglio di covertirli in WGS84 EPSG:4326)
 1. Recarsi su Assets, cliccare su NEW e creare una nuova cartella
@@ -31,6 +31,20 @@ Esempio: Caricare lo shapefile dei comuni ISTAT della regione d'interesse. (Moli
 4. Attendere il caricamento. Lo stato del caricamento si può verificare nel tab Tasks
 
 ![alt text](https://github.com/ludovico85/GIS-RESOURCES/blob/master/GEE/img/img3.png?raw=true)
+
+5. Una volta caricato effettuare un refresh nella scheda Assets per vedere il dataset caricato.
+6. Per comodità si può spostare il dato appena caricato nella cartella creata in presenza semplicemente con un drag&drop
+7. Cliccando sul dato caricato è possibile vedere alcune informazioni, tra le quali Table ID che servirà per richiamare il dato stesso
+![alt text](https://github.com/ludovico85/GIS-RESOURCES/blob/master/GEE/img/img4.png?raw=true)
+8. Recarsi nell'editor dello script e digitare
+```javascript
+var study_area = ee.FeatureCollection('projects/ee-frateludovico-test/assets/dataset/molise')
+```
+
+
+
+
+
 
 
 
