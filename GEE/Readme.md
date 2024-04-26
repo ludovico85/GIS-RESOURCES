@@ -15,10 +15,9 @@ Appunti e script per l'utilizzo di GEE.
 3. Accedere all'Editor.
 
 
-
 ## Caricare e visualizzare un dataset
 Per caricare dataset geografici si deve utilizzare l'Asset Manager nell'editor del codice. Maggiori informazioni [qui](https://developers.google.com/earth-engine/guides/asset_manager)
-Esempio: Caricare lo shapefile dei comuni ISTAT della regione d'interesse. (Molise - consiglio di covertirli in WGS84 EPSG:4326)
+**Esempio: Caricare lo shapefile dei comuni ISTAT della regione d'interesse. (Molise - consiglio di covertirli in WGS84 EPSG:4326)**
 1. Recarsi su Assets, cliccare su NEW e creare una nuova cartella
 
 ![alt text](https://github.com/ludovico85/GIS-RESOURCES/blob/master/GEE/img/img1.png?raw=true)
@@ -54,6 +53,15 @@ Map.addLayer(studyarea, {color: 'green'}, 'FeatureCollection');
 Map.addLayer(campobasso, {color: 'red'}, 'FeatureCollection');
 ```
 ![alt text](https://github.com/ludovico85/GIS-RESOURCES/blob/master/GEE/img/img6.png?raw=true)
+
+
+## Esercizio 01 - Ritagliare un'immagine raster
+Il dataset utilizzato in questo esempio è il [Modello Digitale della Canopy a livello globale a 1 metro di risoluzione](https://gee-community-catalog.org/projects/meta_trees/?fbclid=IwZXh0bgNhZW0CMTAAAR0qEUr0dSkj3WQ5cUIHvfOwjLtXFtxEeUysNqynxtBMevFEF8CaP6a0OPQ_aem_AfeRztZ1Y8TUxqdUK-xLBSjkuWb8X6HCgjwrk2FmtjCLLz3N4ZGPzqCmujvdwAwENdIdnP5aKeakRJ3LSOsSP-XE) accessibile su GEE con il seguente codice sorgente
+```javascript
+var canopy_ht = ee.ImageCollection("projects/meta-forest-monitoring-okw37/assets/CanopyHeight")
+```
+
+
 
 
 
