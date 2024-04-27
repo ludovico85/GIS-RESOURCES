@@ -127,5 +127,5 @@ Per terminare lo scaricamento, recarsi in Tasks e cliccare su Run.
 
 > [!NOTE]  
 > Per l'esportazione del raster sarà necessario qualche minuto.
-> Se l'area di ritaglio è troppo estesa si potrebbe ricevre un'errore. In questo caso bisogna modificare i parametri di `maxPixels` e di `shardSize`
+> Se l'area di ritaglio è troppo estesa si potrebbe ricevere un'errore. In questo caso bisogna modificare i parametri di `maxPixels` e di `shardSize`
 
