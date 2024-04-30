@@ -58,7 +58,7 @@ Map.addLayer(campobasso, {color: 'red'}, 'FeatureCollection');
 
 
 ## Esercizio 01 - Ritagliare ed esportare un raster
-Il raster utilizzato in questo esempio è il [Modello Digitale della Canopy a livello globale a 1 metro di risoluzione](https://gee-community-catalog.org/projects/meta_trees/?fbclid=IwZXh0bgNhZW0CMTAAAR0qEUr0dSkj3WQ5cUIHvfOwjLtXFtxEeUysNqynxtBMevFEF8CaP6a0OPQ_aem_AfeRztZ1Y8TUxqdUK-xLBSjkuWb8X6HCgjwrk2FmtjCLLz3N4ZGPzqCmujvdwAwENdIdnP5aKeakRJ3LSOsSP-XE) accessibile su GEE con il seguente codice sorgente
+Il raster utilizzato in questo esempio è il [Modello Digitale della Canopy a livello globale a 1 metro di risoluzione](https://gee-community-catalog.org/projects/meta_trees/) accessibile su GEE con il seguente codice sorgente
 ```javascript
 var canopy_ht = ee.ImageCollection("projects/meta-forest-monitoring-okw37/assets/CanopyHeight")
 ```
