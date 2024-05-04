@@ -45,3 +45,46 @@ x_min(bounds(buffer(geometry(get_feature ('letture_extra',  'UUID', "FK_UUID")),
 
 In questo caso è stato utilizzato un buffer poiché la geometria è di tipo puntuale. La funzione `get_feature(layer,attribute,value)` permettere di prendere prendere l'elemento di un altro layer che corrisponde al valore dell'attributo indicato.
 Nel caso specifico è l'elemento del layer letture_extra il cui valore nel campo UUID è uguale al valore di FK_UUID (valore che si ottiene grazie alla relazione).
+Altre funzioni inserite nell'Atlante:
+- Foto:
+```
+array_get(
+aggregate(
+layer:='foto',
+aggregate:='array_agg',
+expression:="FOTO"
+),
+array_find(aggregate(
+layer:='foto',
+aggregate:='array_agg',
+expression:="FK_C_UUID"
+), 
+attribute(get_feature('consumi',  'FK_MATRICOLA', "MATRICOLA"),'C_UUID')
+)
+)
+```
+- Nome idrante:
+```
+array_get(
+aggregate(
+layer:='letture_extra',
+aggregate:='array_agg',
+expression:="IDRANTE"
+),
+array_find(aggregate(
+layer:='letture_extra',
+aggregate:='array_agg',
+expression:="UUID"
+), 
+"FK_UUID" 
+)
+)
+```
+
+- Matricola e consumi:
+```
+'MATRICOLA:' || attribute(get_feature('consumi',  'FK_MATRICOLA', "MATRICOLA"),'FK_MATRICOLA' )||
+'\n'||
+'\n'||  
+'CONSUMO: ' || attribute(get_feature('consumi',  'FK_MATRICOLA', "MATRICOLA"),'CONSUMI' )
+```
