@@ -88,3 +88,4 @@ expression:="UUID"
 '\n'||  
 'CONSUMO: ' || attribute(get_feature('consumi',  'FK_MATRICOLA', "MATRICOLA"),'CONSUMI' )
 ```
+[Dati e progetto](https://github.com/ludovico85/GIS-RESOURCES/raw/master/Atals/dati/CONTATORI.zip)
