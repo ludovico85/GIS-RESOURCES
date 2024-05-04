@@ -35,3 +35,13 @@ Riorganizziamo i layer e i nomi dei campi:
 I layer sono messi in relazione così strutturate.
 
 ![alt text](https://github.com/ludovico85/GIS-RESOURCES/blob/master/Atals/img/Immagine%202024-05-04%20155305.png?raw=true)
+
+Si vuole creare un atlante con il layer utenti_extra in modo da avere una pagina per ogni matricola. Una geometria in letture_extra può avere più records associati in utenti_extra.
+Per creare l'atlante sfruttando la geometria di letture_extra si utilizza uno pseudo-atlante ossia si impostano i valori di x_min, x_max, y_min, y_max utilizzando la geometria della relazione.
+
+```
+x_min(bounds(buffer(geometry(get_feature ('letture_extra',  'UUID', "FK_UUID")), 0.0005)))
+```
+
+In questo caso è stato utilizzato un buffer poiché la geometria è di tipo puntuale. La funzione `get_feature(layer,attribute,value)` permettere di prendere prendere l'elemento di un altro layer che corrisponde al valore dell'attributo indicato.
+Nel caso specifico è l'elemento del layer letture_extra il cui valore nel campo UUID è uguale al valore di FK_UUID (valore che si ottiene grazie alla relazione).
