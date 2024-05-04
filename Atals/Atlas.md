@@ -20,6 +20,7 @@ filter:="densita_pop">100
 [Dati e progetto](https://github.com/ludovico85/GIS-RESOURCES/raw/master/Atals/dati/test_atante.gpkg)
 
 ## Utilizzo dell'Atlante con vettore di copertura non geometrico e con più layer in relazione tra di loro
+Testato in QGIS 3.34.6
 >Devo generare un Atlante e voglio che per ogni matricola ci sia una pagina distinta sull'Atlas. Le matricole (Contatori) sono legate all'idrante
 >e possono essere diverse per un solo idrante. Il lavoro è organizzato nel seguente modo: ho un layer puntuale che è anche il layer di copertura dell'atlante
 >e si chiama LETTURE_EXTRA, all'interno ho un campo UUID, con questo campo ho messo in relazione il campo ID_UUID che si trova nel layer UTENTI_EXTRA che è un
