@@ -1,5 +1,6 @@
 # Esempi avanzati di Atlante in QGIS
 ## Filtrare l'Atlante con un layer non geometrico che ha una relazione con un layer geometrico
+Testato in QGIS 3.34.6
 >...vorrei fare un atlante di un layer di poligoni che è in relazione uno-a-molti con una tabella.
 >il layer poligonale governa l'atlante ma io vorrei generare l'atlante solo per i poligoni che hanno elementi collegati nella tabella.
 >come inserire la relazione nel filtro dell'atlante?..
@@ -18,4 +19,10 @@ filter:="densita_pop">100
 ```
 [Dati e progetto](https://github.com/ludovico85/GIS-RESOURCES/raw/master/Atals/dati/test_atante.gpkg)
 
-==Testato in QGIS 3.34.6==
+## Utilizzo dell'Atlante con vettore di copertura non geometrico e con più layer in relazione tra di loro
+>Devo generare un Atlante e voglio che per ogni matricola ci sia una pagina distinta sull'Atlas. Le matricole (Contatori) sono legate all'idrante
+>e possono essere diverse per un solo idrante. Il lavoro è organizzato nel seguente modo: ho un layer puntuale che è anche il layer di copertura dell'atlante
+>e si chiama LETTURE_EXTRA, all'interno ho un campo UUID, con questo campo ho messo in relazione il campo ID_UUID che si trova nel layer UTENTI_EXTRA che è un
+>layer tabellare, questa relazione si chiama UTENTI. Dentro il layer UTENTI_EXTRA ho un campo che si chiama MATRICOLA che è anche utilizzato per mettere in
+>relazione il layer CONSUMI con il corrispondente campo MATRICOLA, questa seconda relazione si chiama LETTURE. Nel layer consumi è presente un campo che si
+>chiama Ph_uuid che è relazionato con il campo C_uuid che si trova nel layer FOTO, questa terza relazione si chiama FOTO.
