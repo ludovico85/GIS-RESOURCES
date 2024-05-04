@@ -26,3 +26,12 @@ filter:="densita_pop">100
 >layer tabellare, questa relazione si chiama UTENTI. Dentro il layer UTENTI_EXTRA ho un campo che si chiama MATRICOLA che è anche utilizzato per mettere in
 >relazione il layer CONSUMI con il corrispondente campo MATRICOLA, questa seconda relazione si chiama LETTURE. Nel layer consumi è presente un campo che si
 >chiama Ph_uuid che è relazionato con il campo C_uuid che si trova nel layer FOTO, questa terza relazione si chiama FOTO.
+
+Riorganizziamo i layer e i nomi dei campi:
+- letture_extra: fid, UUID, IDRANTE
+- utenti_extra: fid, FK_UUID, MATRICOLA
+- consumi: fid, C_UUID, FK_MATRICOLA, consumi
+- foto: fid, foto, FK_C_UUID.
+I layer sono messi in relazione così strutturate.
+
+[alt_text](https://github.com/ludovico85/GIS-RESOURCES/blob/master/Atals/img/Immagine%202024-05-04%20155305.png?raw=true)
