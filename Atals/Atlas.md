@@ -34,4 +34,4 @@ Riorganizziamo i layer e i nomi dei campi:
 - foto: fid, foto, FK_C_UUID.
 I layer sono messi in relazione così strutturate.
 
-[alt_text](https://github.com/ludovico85/GIS-RESOURCES/blob/master/Atals/img/Immagine%202024-05-04%20155305.png?raw=true)
+![alt text](https://github.com/ludovico85/GIS-RESOURCES/blob/master/Atals/img/Immagine%202024-05-04%20155305.png?raw=true)
