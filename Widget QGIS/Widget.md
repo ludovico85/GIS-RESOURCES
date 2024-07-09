@@ -3,6 +3,19 @@
 Testato in QGIS 3.34.6
 
 Ho un layer `tabella` con due campi, oggetto e gruppo
+
+| oggetto    | gruppo |
+| -------- | ------- |
+| cane  | animale    |
+| gatto  | animale    |
+| rosso | colore     |
+| verde | colore     |
+| sassofono | strumento musicale     |
+| chitarra | strumento musicale     |
+| batteria | strumento musicale     |
+| quercia | albero     |
+| faggio | albero    |
+
 oggetto|gruppo
 ————————
 cane|animale
