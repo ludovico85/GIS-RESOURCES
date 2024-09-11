@@ -1,4 +1,4 @@
-#OGR2OGR
+# OGR2OGR
 Per lanciare una specifica versione di gdal C:\OSGeo4W\bin\ogr2ogr.exe
 
 ## Esempio conversione da gpkg a gdb
