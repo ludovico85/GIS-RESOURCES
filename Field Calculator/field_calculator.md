@@ -41,7 +41,7 @@ Rappresentazione grafica del problema
 ![alt text](https://github.com/ludovico85/GIS-RESOURCES/blob/master/Field%20Calculator/img/overlay_nearest.PNG?raw=true)
 
 ## attribute + get_feature
-Permette di ottenere i valori di un campo della tabella attributi di un altro layer grazie ad un campo in comune presente nei due layer.
+Permette di ottenere i valori di un campo (target) della tabella attributi di un altro layer (layerB) grazie ad un campo in comune (campo) presente nei due layer (A e B).
 ``attribute(get_feature('layerB',  'campo_layerB', "campo_layerA"), 'campo_target_layerA')``
 
 
