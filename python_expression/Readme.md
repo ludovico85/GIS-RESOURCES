@@ -48,7 +48,6 @@ Estrae un attributo demografico dalla griglia ISTAT 2021 (LegendaEstesa)
 <li>legenda_name: 'LegendaEstesa' oppure 'LegendaSintetica'
 <li>attr_name: nome dell'attributo da estrarre (es. "Popolazione totale")
 </ul>
-La richiesta viene inviata in EPSG:3857 (Web Mercator).
 <br>
 <h2>Utilizzo:</h2>
 <ul>
@@ -74,3 +73,5 @@ La richiesta viene inviata in EPSG:3857 (Web Mercator).
 <li>Altra dimora un anno prima in Italia</li>  
 <li>Altra dimora un anno prima all'estero</li>
 </ul>
+
+<img src="img/Immagine 2025-03-29 111419.png" width="500">
