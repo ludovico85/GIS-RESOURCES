@@ -38,3 +38,39 @@ Esempio: `edifici_veneto_info($x, $y, 'altezza', 3003)` -> 5.6
 L'espressione permette di ottenere a partire da una geometria puntuale, le informazioni associate al servizio REST SERVICE del [Portale GIS ISTAT](https://gisportal.istat.it/server/rest/services)
 
 <img src="img/Immagine 2025-03-29 110023.png" width="500">
+
+Estrae un attributo demografico dalla griglia ISTAT 2021 (LegendaEstesa)
+    
+<h2>Parametri:</h2>
+<ul>
+<li>xx, yy: coordinate del punto
+<li>srid: EPSG del sistema di riferimento delle coordinate (es. 3045)
+<li>legenda_name: 'LegendaEstesa' oppure 'LegendaSintetica'
+<li>attr_name: nome dell'attributo da estrarre (es. "Popolazione totale")
+</ul>
+La richiesta viene inviata in EPSG:3857 (Web Mercator).
+<br>
+<h2>Utilizzo:</h2>
+<ul>
+<li>get_istat_censimento_attr($x, $y, '32633', 'LegendaEstesa', 'Popolazione totale')</li>
+</ul>
+<br>
+<h2>Attributi:</h2>
+<ul>
+<li>OBJECTID</li>  
+<li>GRD_ID</li>  
+<li>CNTR_ID</li>  
+<li>Popolazione totale</li>  
+<li>Popolazione totale maschile</li>  
+<li>Popolazione totale femminile</li>  
+<li>Popolazione (0-14 anni)</li>  
+<li>Popolazione (15-64 anni)</li>  
+<li>Popolazione (oltre 65 anni)</li>  
+<li>Nati in Italia</li>  
+<li>Nati in altro paese EU</li>  
+<li>Nati in altro paese extra-EU</li>  
+<li>Occupati</li>  
+<li>Stessa dimora un anno prima</li>  
+<li>Altra dimora un anno prima in Italia</li>  
+<li>Altra dimora un anno prima all'estero</li>
+</ul>
