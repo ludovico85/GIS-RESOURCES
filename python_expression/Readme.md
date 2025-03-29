@@ -33,3 +33,8 @@ Esempio: `edifici_veneto_info($x, $y, 'altezza', 3003)` -> 5.6
 
 > [!NOTE] 
 > Il wms e le coordinate dei punti (o il layer utilizzato) devono avere lo stesso sistema di riferimento!
+
+### get_istat_attr_censimento.py
+L'espressione permette di ottenere a partire da una geometria puntuale, le informazioni associate al servizio REST SERVICE del [Portale GIS ISTAT](https://gisportal.istat.it/server/rest/services)
+
+<img src="Immagine 2025-03-29 110023.png" width="500">
